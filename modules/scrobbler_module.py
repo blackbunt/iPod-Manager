@@ -1,3 +1,8 @@
+'''
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+'''
 import os
 import sys
 import subprocess
@@ -7,9 +12,10 @@ from tqdm import tqdm
 from datetime import datetime, timezone
 from InquirerPy import inquirer
 
+
 def download_rb_scrobbler(download_path: Path):
     """Downloads the latest version of rb-scrobbler from GitHub."""
-    url = "https://github.com/jeselnik/rb-scrobbler/releases/latest/download/rb-scrobbler"
+    url = "https://github.com/blackbunt/rb-scrobbler/releases/latest/download/rb-scrobbler"
     response = requests.get(url, stream=True)
     response.raise_for_status()
 
