@@ -22,7 +22,7 @@ from InquirerPy import inquirer
 
 def get_latest_version() -> dict:
     """Fetches the latest version details of rb-scrobbler from GitHub."""
-    url = "https://api.github.com/repos/jeselnik/rb-scrobbler/releases/latest"
+    url = "https://api.github.com/repos/blackbunt/rb-scrobbler/releases/latest"
     response = requests.get(url)
     response.raise_for_status()
     return response.json()
