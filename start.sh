@@ -12,6 +12,9 @@
 # License     : GPLv3 (https://www.gnu.org/licenses/gpl-3.0.html)
 # Repository  : https://github.com/blackbunt/ipod-manager
 # ==================================================================
+# Get script dir and locate venv dir
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV_DIR="$SCRIPT_DIR/.venv"
 
 # Check and create the virtual environment if it doesn't exist
 if [ ! -d ".venv" ]; then
