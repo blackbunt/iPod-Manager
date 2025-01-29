@@ -28,7 +28,7 @@ if [ ! -d ".venv" ]; then
 fi
 
 # Activate the virtual environment
-source $VENV_DIR/.venv/bin/activate
+source $VENV_DIR/bin/activate
 
 # Check and install missing packages
 REQUIRED_PACKAGES=("InquirerPy" "tqdm" "requests")
