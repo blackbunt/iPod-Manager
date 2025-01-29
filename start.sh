@@ -54,4 +54,4 @@ if [ ${#MISSING_PACKAGES[@]} -ne 0 ]; then
 fi
 
 # Run the Python script
-python ipod-manager.py
+python $SCRIPT_DIR/ipod-manager.py
